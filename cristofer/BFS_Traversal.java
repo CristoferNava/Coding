@@ -31,13 +31,13 @@ public class BFS_Traversal {
 
     public static void search(Node root) {
         Queue<Node> queue = new LinkedList<>();
-        queue.offer(root);
+        queue.add(root);
 
         while (!queue.isEmpty()) {
-            Node r = queue.poll();
+            Node r = queue.remove();
             System.out.printf("%d ", r.data);
-            if (r.left != null) queue.offer(r.left);
-            if (r.right != null) queue.offer(r.right);
+            if (r.left != null) queue.add(r.left);
+            if (r.right != null) queue.add(r.right);
         }
     }
 }

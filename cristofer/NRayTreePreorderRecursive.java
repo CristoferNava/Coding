@@ -14,4 +14,4 @@ public class NRayTreePreorderRecursive {
 }
 
 // Time: O(n) because we have to traverse all the nodes in the tree
-// Space: O(h) being h the maximum depth of the tree
+// Space: O(n) because result has n Integers
